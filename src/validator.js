@@ -1,9 +1,11 @@
 function validateCreditCard(numeroTarjeta) {
+  if (numeroTarjeta.length === 0) return "Debe ingresar los números de su tarjeta"
+
   const arrayTarjeta = String(numeroTarjeta).split('')
   let acumulador = 0
   for (let i = 0; i < arrayTarjeta.length; i++) {
     let digitoTarjeta = arrayTarjeta[i]
-    let digitoSerieLhun = (i % 2) == 0 ? 2 : 1
+    let digitoSerieLhun = (i % 2) === 0 ? 2 : 1
     let resultadoMultiplicacion = digitoTarjeta * digitoSerieLhun
     if (resultadoMultiplicacion >= 10) {
       let digitoSeparados = String(resultadoMultiplicacion).split('')
@@ -20,7 +22,8 @@ function validateCreditCard(numeroTarjeta) {
     return "Tu tarjeta es válida"
   else
     return "Tu tarjeta es inválida"
-};
+}
+
 
 
 function maskify(input) {
@@ -37,7 +40,8 @@ function onlyNumbers(e) {
 }
 
 function masking(numeroTarjetaReal, numeroTarjeta) {
-  numeroTarjeta.value = maskify(numeroTarjetaReal.value);
+  numeroTarjeta.innerText = maskify(numeroTarjetaReal.value);
+
 }
 
 export { validateCreditCard, onlyNumbers, masking };
