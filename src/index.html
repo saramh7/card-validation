@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Tarjeta de crédito válida</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,300&display=swap"
+    rel="stylesheet">
+  <script src="index.js" type="module"></script>
+  <script src="https://kit.fontawesome.com/66ecd56f49.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <div class="header-box">
+      <img src="imagen/tarjeta de credito.jpeg" id="imagen">
+      <h1>Estás a un paso de finalizar</h1>
+    </div>
+  </header>
+  <main>
+    <div class="contenedor">
+      <div class="contenedor-validador">
+        <input type="text" id="numeroTarjeta" name="numeroTarjeta">
+        <i class="fa-brands fa-cc-mastercard"></i>
+        <label id="vista-resultado" name="vista-resultado" />
+
+        <div class="form-group">
+          <input type="text" class="input" id="numeroTarjetaReal" name="numeroTarjetaReal"
+            placeholder="Número de Tarjeta">
+          <label class="form-label">Número de Tarjeta</label>
+        </div>
+        <input type="button" id="btn-validar" name="btn-validar" value="Validar" />
+        <h3>Gracias por tu compra</h3>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <h3>Sara Martínez Hidalgo</h3>
+      <p>Proyecto validador de tarjeta creado para Laboratoria</p>
+      <ul class="socials">
+        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+      </ul>
+      <div class=”footer-bottom”>
+        <p>Copyright 2023
+          <a href="mailto:saramh7@hotmail.com">Escríbeme aquí</a>
+        </p>
+      </div>
+    </div>
+
+  </footer>
+</body>
+
+</html>
