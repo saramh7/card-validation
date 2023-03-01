@@ -13,3 +13,6 @@ El proyecto cumple con los siguientes puntos:
 [x] El proyecto es entregado subiendo tu código a GitHub.
 [x] La interfaz es "desplegada" usando GitHub Pages.
 [x] El README contiene una definición del producto.
+
+## Proyecto desplegado
+Para acceder al proyecto desplegado [Haga click aquí](https://saramh7.github.io/card-validation/)

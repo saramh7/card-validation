@@ -41,7 +41,3 @@ function enmascararNumero() {
   const valorEncriptado = maskify(numeroTarjetaReal.value)
   numeroTarjeta.innerText = valorEncriptado
 }
-
-
-
-
