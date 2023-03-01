@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <title>Tarjeta de crédito válida</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,300&display=swap"
+    rel="stylesheet">
+  <script src="index.js" type="module"></script>
+  <script src="https://kit.fontawesome.com/66ecd56f49.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <div class="header-box">
+      <img src="imagen/tarjeta de credito.jpeg" id="imagen">
+      <h1>Estás a un paso de finalizar</h1>
+    </div>
+  </header>
+  <main>
+    <div class="contenedor">
+      <div class="tarjeta">
+        <label id="numeroTarjeta" class="numero-tarjeta" name="numeroTarjeta"></label>
+        <i id="iconCreditCard"></i>
+        <label id="vistaResultado" name="vista-resultado"></label>
+      </div>
+      <div class="form">
+        <div class="form-group">
+          <label class="form-label">Ingresa tu número de Tarjeta</label>
+          <input type="text" class="form-input" id="numeroTarjetaReal" name="numeroTarjetaReal" maxlength="16" />
+        </div>
+        <div class="form-action">
+          <input type="button" class="form-button" id="btnValidar" name="btn-validar" value="Validar" />
+          <h3>Gracias por tu compra</h3>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="footer-content">
+      <h3>Sara Martínez Hidalgo</h3>
+      <p>Proyecto validador de tarjeta creado para Laboratoria</p>
+      <ul class="socials">
+        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+      </ul>
+      <div class="footer-bottom">
+        <p>Copyright 2023
+          <a href="mailto:saramh7@hotmail.com">Escríbeme aquí</a>
+        </p>
+      </div>
+    </div>
+
+  </footer>
+</body>
+
+</html>
