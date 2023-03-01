@@ -30,6 +30,7 @@ h2 {
 h3 {
   color: #2f496e;
   text-align: center;
+  padding: 3rem;
 }
 
 .header-box {
@@ -41,18 +42,17 @@ h3 {
   object-fit: cover;
 }
 
-#vista-resultado {
+#iconCreditCard {
+  font-size: 5rem;
+}
+
+#vistaResultado {
   font-size: 20px;
   font-weight: bold;
   color: #2f496e;
 }
 
 .contenedor {
-  display: flex;
-  justify-content: center;
-}
-
-.contenedor-validador {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -76,57 +76,54 @@ h3 {
   color: #2f496e;
   font-size: 2rem;
 }
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 .form-group {
-  position: relative;
   margin: 12px 0;
+}
+
+.form-action {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
 }
 
 .form-group input {
   padding: 8px 10px;
   font-size: 18px;
   border-radius: 5px;
-  width: 20rem;
+  width: 15rem;
   border: #acacac solid 2px;
-  background-color: transparent;
   color: #2988bc;
-  transition: 0.15s all ease;
 }
 
 .form-group input:focus {
-  border-color: #eee;
+  border-color: #eeeeee;
 }
 
 .form-group input::placeholder {
-  color: transparent;
+  color: #2988bc;
 }
 
 .form-group .form-label {
-  position: absolute;
   top: 9px;
   left: 0;
   font-size: 18px;
   padding: 0 10px;
-  color: #acacac;
-  pointer-events: none;
-  transition: 0.15s all ease;
-}
-
-.form-group input:focus + .form-label,
-.form-group input:not(:placeholder-shown) + .form-label {
-  transform: translate(5px, -22px);
-  background-color: #f4eade;
-  font-size: 14px;
   color: #2988bc;
 }
 
-#btn-validar {
+.form-button {
   background-color: #dab88b;
   color: #2988bc;
   padding: 10px 35px;
   font-size: medium;
   cursor: pointer;
-  margin: auto;
+  margin: 2rem;
   display: block;
 }
 

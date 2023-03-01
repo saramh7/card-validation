@@ -1,5 +1,5 @@
 // importamos el objeto `validator`, que contiene las funciones `isValid` y `maskify`
-import validator from '../src/validator';
+import * as validator from '../src/validator';
 
 describe('validator', () => {
   it('debería ser un objeto', () => {
@@ -41,4 +41,28 @@ describe('validator', () => {
       expect(validator.maskify('helloworld')).toBe('######orld');
     });
   });
+
+  describe('validator.validateCardCompany', () => {
+    it('debería ser una función', () => {
+      expect(typeof validator.validateCardCompany).toBe('function');
+    });
+
+    it('debería retornar VISA para "4083952015263"', () => {
+      expect(validator.validateCardCompany('4083952015263')).toBe("fa-brands fa-cc-visa");
+    });
+    it('debería retornar mastercard para "5100333631946780"', () => {
+      expect(validator.validateCardCompany('5100333631946780')).toBe("fa-brands fa-cc-mastercard");
+    });
+    it('debería retornar Amex para "371483591190847"', () => {
+      expect(validator.validateCardCompany('371483591190847')).toBe("fa-brands fa-cc-amex");
+    });
+    it('debería retornar Discover para "6443091642773155"', () => {
+      expect(validator.validateCardCompany('6443091642773155')).toBe("fa-brands fa-cc-discover");
+    });
+    it('debería retornar " " para otro tipo de tarjeta', () => {
+      expect(validator.validateCardCompany('79927398713')).toBe("");
+    });
+
+  });
+
 });
